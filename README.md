@@ -20,111 +20,120 @@
       margin: 0 auto;
       padding: 24px 16px 40px;
     }
-   
-  .logo-circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid #facc15; /* yellow border */
-    margin: 0 auto 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;            
-    background-color: #000000; /* fallback bg */
-  }
 
-  .Logo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;      
-  }
+    .logo-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #facc15; /* yellow border */
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;            
+      background-color: #000000; /* fallback bg */
+    }
 
-  /* Heading and subtitle */
-  h1 {
-    font-size: 26px;
-    margin: 8px 0 4px;
-  }
-  
-  .tagline {
-    font-size: 14px;
-    color: #c4c4c4;
-    margin-bottom: 20px;
-  }
+    .logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;      
+      display: block;
+    }
 
-  /* Stats cards */
-  .stats {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-  }
+    /* Heading and subtitle */
+    h1 {
+      font-size: 26px;
+      margin: 8px 0 4px;
+    }
+    
+    .tagline {
+      font-size: 14px;
+      color: #c4c4c4;
+      margin-bottom: 20px;
+    }
 
-  .stat-card {
-    flex: 1;
-    background-color: #064e3b;
-    border-radius: 10px;
-    padding: 10px 4px;
-    font-size: 11px;
-  }
+    /* Stats cards */
+    .stats {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
 
-  .stat-main {
-    font-weight: bold;
-    font-size: 14px;
-    color: #facc15;
-  }
+    .stat-card {
+      flex: 1;
+      background-color: #064e3b;
+      border-radius: 10px;
+      padding: 10px 4px;
+      font-size: 11px;
+    }
 
-  /* CTA button */
-  .cta-btn {
-    display: block;
-    width: 100%;
-    margin: 8px 0 14px;
-    padding: 14px 0;
-    background-color: #f59e0b; /* orange */
-    color: #111111;
-    border: none;
-    border-radius: 999px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+    .stat-main {
+      font-weight: bold;
+      font-size: 14px;
+      color: #facc15;
+    }
 
-  .cta-btn:hover {
-    background-color: #fbbf24;
-  }
+    /* CTA button */
+    .cta-btn {
+      display: block;
+      width: 100%;
+      margin: 8px 0 14px;
+      padding: 14px 0;
+      background-color: #f59e0b; /* orange */
+      color: #111111;
+      border: none;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-  .badge {
-    display: inline-block;
-    padding: 6px 16px;
-    border-radius: 999px;
-    background-color: #ef4444; /* red */
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
+    .cta-btn:hover {
+      background-color: #fbbf24;
+    }
 
-  /* Benefits box */
-  .benefits {
-    background-color: #064e3b;
-    border-radius: 16px;
-    padding: 16px 14px;
-    text-align: middle;
-    font-size: 13px;
-  }
+    .cta-btn .cta-link {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
 
-  .benefits ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background-color: #ef4444; /* red */
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
 
-  .benefits li {
-    margin-bottom: 8px;
-  }
+    /* Benefits box */
+    .benefits {
+      background-color: #064e3b;
+      border-radius: 16px;
+      padding: 16px 14px;
+      text-align: middle;
+      font-size: 13px;
+    }
 
-  .benefits li::before {
-    content: "★ ";
-    color: #facc15;
-  }
+    .benefits ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .benefits li {
+      margin-bottom: 8px;
+    }
+
+    .benefits li::before {
+      content: "★ ";
+      color: #facc15;
+    }
 
   </style>
 </head>
@@ -133,11 +142,12 @@
   <div class="wrapper">
     <!-- top logo area -->
     <div class="logo-circle">
-      LOGO
+      <!-- replace src with the correct path to logo.jpg on your server -->
+      <img src="logo.jpg" alt="South Indian Report Logo" class="logo-img">
     </div>
 
     <h1>South_Indian_Report</h1>
-    <div class="tagline">Premium Match & Toss Predictions</div>
+    <div class="tagline">Premium Match &amp; Sessions Predictions</div>
 
     <!-- stats -->
     <div class="stats">
@@ -155,22 +165,21 @@
       </div>
     </div>
     
-<!-- main button -->
+    <!-- main button -->
     <button class="cta-btn">
-    <a href="https://t.me/+YPGUNZl08xYyODM1" target="_blank" class="cta-link">JOIN CHANNEL NOW</a>
- </button>
-
+      <a href="https://t.me/+YPGUNZl08xYyODM1" target="_blank" class="cta-link">JOIN CHANNEL NOW</a>
+    </button>
 
     <div class="badge">99.99% Accuracy in All Matches</div>
 
     <!-- benefits -->
     <div class="benefits">
       <ul>
-        <li>Toss + Match free tips</li>
-        <li>"Daily expert guidance with risk management"</li>
+        <li>Sessions + Match free tips</li>
+        <li>Daily expert guidance with risk management</li>
         <li>Immediate updates before every session</li>
       </ul>
     </div>
   </div>
 </body>
-</html> 
+</html>
