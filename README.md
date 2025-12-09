@@ -20,6 +20,11 @@
       margin: 0 auto;
       padding: 24px 16px 40px;
     }
+
+    <div class="logo-circle">
+  <img src="1000148374.jpg" alt="Logo" class="logo-img">
+</div>
+   
   .logo-circle {
     width: 140px;
     height: 140px;
